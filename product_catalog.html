@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Contacts Search</title>
+	<title>Product Catalog</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	
@@ -13,43 +13,50 @@
 	<div class="topnav">
 	  <a href="#">Dashboard</a>
 	  <a href="#">Add Attendant</a>
-	  <a href="product_catalog.html">Products Catalog</a>
+	  <a class="active" href="product_catalog.html">Products Catalog</a>
 	  <a href="attendants.html">List of attendants</a>
-	  <a class="active" href="contacts.html">Contacts</a>
+	  <a href="contacts.html">Contacts</a>
 	</div> 
 
-	<h2>Staff Directory</h2>
+	<h2>Products</h2>
 
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search product by Name" title="Type in a name">
 
 <table id="myTable">
   <tr class="header">
     <th style="width:60%;">Name</th>
-    <th style="width:40%;">Phone Number</th>
+    <th style="width:40%;">Price</th>
+    <th style="width:30%;">Quantity</th>
   </tr>
   <tr>
-    <td>Peter Parker</td>
-    <td>0772123456</td>
+    <td>Toilet Rolls</td>
+    <td>$10</td>
+    <td>11</td>
   </tr>
   <tr>
-    <td>Bruce Banner</td>
-    <td>0758123456</td>
+    <td>SunQuick</td>
+    <td>$1</td>
+    <td>100</td>
   </tr>
   <tr>
-    <td>Tony Stark</td>
-    <td>1800-TONY-STARK</td>
+    <td>Kitchen Towels</td>
+    <td>$5</td>
+    <td>40</td>
   </tr>
   <tr>
-    <td>Peter Quin</td>
-    <td>0778122345</td>
+    <td>Shoe Polish</td>
+    <td>$9.50</td>
+    <td>6</td>
   </tr>
   <tr>
-    <td>Rebecca Namutale</td>
-    <td>07522345678</td>
+    <td>Ale</td>
+    <td>$1.99</td>
+    <td>27</td>
   </tr>
   <tr>
-    <td>John Wiltz</td>
-    <td>+60172994784</td>
+    <td>Bed sheets</td>
+    <td>$20</td>
+    <td>43</td>
   </tr>
   
 </table>
