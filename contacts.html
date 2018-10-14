@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contacts Search</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" type="text/css" href="./css/contacts.css">
+
+</head>
+<body>
+	
+	<div class="topnav">
+	  <a href="#">Dashboard</a>
+	  <a href="#">Add Attendant</a>
+	  <a href="#">Products Catalog</a>
+	  <a href="attendants.html">List of attendants</a>
+	  <a class="active" href="contacts.html">Contacts</a>
+	</div> 
+
+	<h2>Staff Directory</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+<table id="myTable">
+  <tr class="header">
+    <th style="width:60%;">Name</th>
+    <th style="width:40%;">Phone Number</th>
+  </tr>
+  <tr>
+    <td>Peter Parker</td>
+    <td>0772123456</td>
+  </tr>
+  <tr>
+    <td>Bruce Banner</td>
+    <td>0758123456</td>
+  </tr>
+  <tr>
+    <td>Tony Stark</td>
+    <td>1800-TONY-STARK</td>
+  </tr>
+  <tr>
+    <td>Peter Quin</td>
+    <td>0778122345</td>
+  </tr>
+  <tr>
+    <td>Rebecca Namutale</td>
+    <td>07522345678</td>
+  </tr>
+  <tr>
+    <td>John Wiltz</td>
+    <td>+60172994784</td>
+  </tr>
+  
+</table>
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+
+	
+</body>
+</html>
