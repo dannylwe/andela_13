@@ -1,1 +1,3 @@
 flask/
+.cache/
+__pycache__/
